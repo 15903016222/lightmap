@@ -28,7 +28,7 @@ void LightMapWidget::InitForm()
     QWebChannel *channel = new QWebChannel(this);
     channel->registerObject("bridge", (QObject*)bridgeins);
     ui->webView->page()->setWebChannel(channel);	
-	ui->webView->page()->load(QUrl(qApp->applicationDirPath() + "/index.html"));
+	ui->webView->page()->load(QUrl("file://" + qApp->applicationDirPath() + "/index.html"));
 	
 	bridgeins->Init();
 	
