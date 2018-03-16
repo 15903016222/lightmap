@@ -1,4 +1,4 @@
-QT       += core gui widgets webenginewidgets
+QT       += core gui widgets webenginewidgets webchannel
 
 TARGET = lightmap
 TEMPLATE = app
